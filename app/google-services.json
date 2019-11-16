@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "443167689641",
+    "firebase_url": "https://zoohack-bbff3.firebaseio.com",
+    "project_id": "zoohack-bbff3",
+    "storage_bucket": "zoohack-bbff3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443167689641:android:d640fc2acfdfa4524092b8",
+        "android_client_info": {
+          "package_name": "com.example.zoohack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443167689641-48jigr4d3q8rnl97h3678die2hajt4sk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zoohack",
+            "certificate_hash": "82f3cc54070b94d4adafbfe4f2b426da8d2ac606"
+          }
+        },
+        {
+          "client_id": "443167689641-r0bkmaak2urbnjil17krb5o464htmnia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZMjTnTHmembkcCS94JEDohLPcjR29Nk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443167689641-r0bkmaak2urbnjil17krb5o464htmnia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
