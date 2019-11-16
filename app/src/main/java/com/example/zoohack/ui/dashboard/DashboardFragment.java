@@ -8,17 +8,18 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.zoohack.R;
 
-public class DashboardFragment extends Fragment {
+public class DashboardFragment extends AppCompatActivity {
 
     private DashboardViewModel dashboardViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
+    public View onCreate(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
@@ -30,6 +31,6 @@ public class DashboardFragment extends Fragment {
                 textView.setText(s);
             }
         });
-        return root;
+
     }
 }
