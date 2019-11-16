@@ -1,19 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateReport">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:hint="type" />
+
+    <EditText
+        android:id="@+id/affected"
+        android:layout_width="397dp"
+        android:layout_height="54dp"
+        android:hint="affected" />
+
+    <EditText
+        android:id="@+id/count"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="66dp"
+        android:hint="count" />
+
+    <EditText
+        android:id="@+id/place"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="place" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:text="create report" />
+
+</LinearLayout>
