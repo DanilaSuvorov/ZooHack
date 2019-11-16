@@ -12,3 +12,11 @@ To create a clear mechanism for local communities that will make it possible to 
 
 # Problem:
 We believe that there are a lot of wildlife incidents that are not reported to the relevant authorities or which are reported too long after that incident.
+
+# About Us
+We are a Russian team that consists of 3 people. The first person is Dmitriy Sevastyanov who is 17 y.o. He is a full-stack programmer on Python and Java. The second participant of our team is Vladimir Yafarov who is 18 y.o. He is the manager and creates cool presentations. And the last person in our team is the youngest. Danila Suvorov is 14 y.o. He is a programmer, too. In spite of his age he already knows coding languages as Python, Java, C# and JavaScript. We have already taken part in more than 10 hackathons and we are not going to stop.
+
+
+
+#From Russia with love :)
+#Из России с любовью :)
