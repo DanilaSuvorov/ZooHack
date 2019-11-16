@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "443167689641-iohs0oascor6lgrq54u31i55mcb59hb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zoohack",
+            "certificate_hash": "abb0ae7b118d5476436aac8edae546066fce7f49"
+          }
+        },
+        {
           "client_id": "443167689641-48jigr4d3q8rnl97h3678die2hajt4sk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
