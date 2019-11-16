@@ -18,5 +18,4 @@ We are a Russian team that consists of 3 people. The first person is Dmitriy Sev
 
 
 
-#From Russia with love :)
-#Из России с любовью :)
+# From Russia with love :) / Из России с любовью :)
