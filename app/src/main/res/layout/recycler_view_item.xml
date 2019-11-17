@@ -8,13 +8,19 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
             android:layout_weight="1"
+            android:background="#E5E5E5"
+            android:fontFamily="@font/montserrat"
             android:text="TextView" />
 
     <TextView
             android:id="@+id/place"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="#E5E5E5"
+            android:fontFamily="@font/montserrat"
             android:layout_weight="1"
             android:text="TextView" />
 
@@ -22,6 +28,9 @@
             android:id="@+id/author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginBottom="3dp"
+            android:background="#E5E5E5"
             android:layout_weight="1"
             android:text="TextView" />
 
@@ -29,13 +38,19 @@
             android:id="@+id/rating"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="#E5E5E5"
+            android:fontFamily="@font/montserrat"
             android:layout_weight="1"
             android:text="TextView" />
 
     <TextView
             android:id="@+id/affected"
             android:layout_width="match_parent"
+            android:layout_marginBottom="3dp"
             android:layout_height="wrap_content"
+            android:background="#E5E5E5"
+            android:fontFamily="@font/montserrat"
             android:layout_weight="1"
             android:text="TextView" />
 
@@ -43,27 +58,39 @@
             android:id="@+id/num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#E5E5E5"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginBottom="3dp"
             android:layout_weight="1"
             android:text="TextView" />
 
     <LinearLayout
             android:layout_width="match_parent"
+            android:background="#E5E5E5"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/montserrat"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal">
 
         <Button
                 android:id="@+id/confirm"
-                android:layout_width="wrap_content"
+                android:layout_width="72dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:background="#32CD32"
+                android:fontFamily="@font/montserrat"
                 android:text="+" />
 
         <Button
                 android:id="@+id/refute"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginLeft="3dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FF0000"
                 android:text="-" />
     </LinearLayout>
 </LinearLayout>

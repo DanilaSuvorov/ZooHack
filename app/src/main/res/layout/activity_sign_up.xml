@@ -85,7 +85,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintStart_toEndOf="@+id/back1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -124,7 +124,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/back"
+        android:id="@+id/back1"
         android:layout_width="56dp"
         android:layout_height="58dp"
         android:layout_marginStart="31dp"
