@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".LoginActivity">
 
     <EditText
             android:id="@+id/username"
@@ -19,8 +19,8 @@
             android:layout_marginTop="340dp"
             android:layout_marginEnd="24dp"
 
-            android:hint="@string/prompt_email"
             android:background="#FFFFFF"
+            android:hint="@string/prompt_email"
             android:inputType="textEmailAddress"
             android:selectAllOnFocus="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,8 +32,8 @@
             android:layout_width="0dp"
             android:layout_height="67dp"
             android:layout_marginStart="24dp"
-            android:background="#FFFFFF"
             android:layout_marginEnd="24dp"
+            android:background="#FFFFFF"
 
             android:hint="@string/prompt_password"
             android:imeActionLabel="@string/action_sign_in_short"
@@ -68,27 +68,39 @@
             android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="28dp"
             android:text="Don't have an account?"
-            app:layout_constraintTop_toBottomOf="@+id/signIn"
-            tools:layout_editor_absoluteX="26dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn" />
 
     <TextView
             android:id="@+id/textView3"
             android:layout_width="239dp"
-            android:layout_height="140dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginBottom="221dp"
             android:fontFamily="@fonts/Montserrat-Black.otf"
             android:text="MAIN SOLVE
              IS YOUR
               REPORT"
             android:textSize="40sp"
-            tools:layout_editor_absoluteX="43dp"
-            tools:layout_editor_absoluteY="136dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="199dp"
             android:text="Forgot your password?"
-            tools:layout_editor_absoluteX="238dp"
-            tools:layout_editor_absoluteY="497dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

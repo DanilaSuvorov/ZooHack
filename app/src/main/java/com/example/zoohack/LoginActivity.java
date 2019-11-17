@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -62,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             });
 
-            Button singUp = (Button) findViewById(R.id.signUp); // кнопка регистрации
+            TextView singUp = findViewById(R.id.signUp); // кнопка регистрации
             singUp.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
