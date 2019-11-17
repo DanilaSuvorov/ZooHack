@@ -30,7 +30,7 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         
-        ImageView back = findViewById(R.id.back);
+        ImageView back = findViewById(R.id.back1);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

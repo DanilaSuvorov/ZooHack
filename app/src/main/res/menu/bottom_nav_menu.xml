@@ -3,20 +3,12 @@
 
     <item
         android:id="@+id/navigation_home"
-<<<<<<< HEAD
-            android:icon="@drawable/ic_action_name"
-=======
         android:icon="@drawable/ic_action_name"
->>>>>>> 7d46f87059b5ec6d424ad212e6d11805cf5584ea
         android:title="Home" />
 
     <item
         android:id="@+id/navigation_dashboard"
-<<<<<<< HEAD
-            android:icon="@drawable/ic_action_ghd"
-=======
         android:icon="@drawable/ic_action_ghd"
->>>>>>> 7d46f87059b5ec6d424ad212e6d11805cf5584ea
         android:title="Make a report" />
 
     <item

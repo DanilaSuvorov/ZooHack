@@ -8,30 +8,30 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="159dp"
         android:layout_marginStart="142dp"
         android:layout_marginLeft="142dp"
-        android:layout_marginTop="83dp"
+        android:layout_marginTop="53dp"
         android:layout_marginEnd="142dp"
         android:layout_marginRight="142dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@mipmap/ic_trump_round" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="52dp"
         android:layout_height="52dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
         android:layout_marginTop="27dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
         android:layout_marginBottom="652dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -41,29 +41,35 @@
         android:id="@+id/textView5"
         android:layout_width="129dp"
         android:layout_height="41dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="83dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="3dp"
         android:text="Profile"
+        android:fontFamily="@font/montserrat"
         android:textColor="#FF473A"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="52dp"
-        android:layout_height="38dp"
+        android:layout_width="72dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/montserrat"
         android:text="ECO
         REPORT"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="333dp"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/name"
@@ -71,15 +77,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="67dp"
         android:layout_marginLeft="67dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
-        android:layout_marginBottom="375dp"
-        android:text="Gerasimova Nataliya"
+        android:layout_marginBottom="410dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Donald J. Tramp"
         android:textColor="#FF473A"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -87,68 +95,133 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginRight="312dp"
+        android:fontFamily="@font/montserrat"
         android:text="Your E-Mail:"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="373dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:layout_marginBottom="20dp"
         android:text="your_e-mail@gmail.com"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="392dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginRight="261dp"
+        android:fontFamily="@font/montserrat"
         android:text="Your phone number:"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginRight="195dp"
+        android:layout_marginBottom="26dp"
         android:text="8(800)-555-35-35"
+        android:fontFamily="@font/montserrat"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="6dp"
         android:text="Achievements:"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="566dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="273dp"
+        android:layout_marginLeft="273dp"
+        android:layout_marginTop="228dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="1dp"
         android:text="Karma:"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="572dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="72dp"
         android:layout_height="45dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="66dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="94dp"
         android:text="398"
         android:textColor="#669966"
         android:textSize="35sp"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="591dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="75dp"
         android:layout_height="64dp"
-        app:srcCompat="@drawable/ic_star_black_24dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="591dp" />
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/ic_star_black_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

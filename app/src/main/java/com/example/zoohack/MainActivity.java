@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
                         break;
                     case R.id.navigation_dashboard:
-                        Fragment fragment1 = new CreateReport();
+                        Fragment fragment1 = new DashboardFragment();
                         FragmentManager fragmentManager1 = getSupportFragmentManager();
                         fragmentManager1.beginTransaction().replace(R.id.container, fragment1).commit();
                         break;
@@ -57,17 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Read from the database
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                String value = dataSnapshot.getValue(String.class);
-            }
 
-            @Override
-            public void onCancelled(DatabaseError error) {
-            }
-        });
     }
 }

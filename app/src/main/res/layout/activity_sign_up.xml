@@ -12,74 +12,7 @@
         tools:context=".LoginActivity">
 
     <EditText
-<<<<<<< HEAD
-            android:id="@+id/username"
-            android:layout_width="331dp"
-            android:layout_height="wrap_content"
 
-            android:hint="@string/prompt_email"
-            android:inputType="textEmailAddress"
-            android:selectAllOnFocus="true"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="196dp" />
-
-    <EditText
-            android:id="@+id/password"
-            android:layout_width="331dp"
-            android:layout_height="wrap_content"
-
-            android:hint="@string/prompt_password"
-            android:imeActionLabel="@string/action_sign_in_short"
-            android:imeOptions="actionDone"
-            android:inputType="textPassword"
-            android:selectAllOnFocus="true"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="238dp" />
-
-    <EditText
-            android:id="@+id/repeat_password"
-            android:layout_width="331dp"
-            android:layout_height="wrap_content"
-
-            android:hint="repeatPassword"
-            android:imeActionLabel="@string/action_sign_in_short"
-            android:imeOptions="actionDone"
-            android:inputType="textPassword"
-            android:selectAllOnFocus="true"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="282dp" />
-
-    <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Registration"
-            android:textColor="#FF473A"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="127dp"
-            tools:layout_editor_absoluteY="46dp" />
-
-    <Button
-            android:id="@+id/signUp"
-            android:layout_width="306dp"
-            android:layout_height="48dp"
-            android:layout_gravity="start"
-            android:background="#FF473A"
-            android:enabled="true"
-            android:text="Join today"
-            android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="603dp" />
-
-    <EditText
-            android:id="@+id/editText"
-            android:layout_width="335dp"
-            android:layout_height="37dp"
-            android:ems="10"
-            android:inputType="phone"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="155dp" />
-=======
         android:id="@+id/username"
         android:layout_width="300dp"
         android:layout_height="49dp"
@@ -152,7 +85,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintStart_toEndOf="@+id/back1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -191,7 +124,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/back"
+        android:id="@+id/back1"
         android:layout_width="56dp"
         android:layout_height="58dp"
         android:layout_marginStart="31dp"
@@ -220,6 +153,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
->>>>>>> 7d46f87059b5ec6d424ad212e6d11805cf5584ea
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

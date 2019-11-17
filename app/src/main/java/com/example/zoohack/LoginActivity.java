@@ -10,10 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-<<<<<<< HEAD
-=======
-import android.widget.ImageView;
->>>>>>> 7d46f87059b5ec6d424ad212e6d11805cf5584ea
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,11 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             });
 
-<<<<<<< HEAD
-            TextView singUp = findViewById(R.id.signUp); // кнопка регистрации
-=======
             TextView singUp = findViewById(R.id.signUp); // registration
->>>>>>> 7d46f87059b5ec6d424ad212e6d11805cf5584ea
             singUp.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
