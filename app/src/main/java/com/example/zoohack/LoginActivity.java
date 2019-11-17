@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -38,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             Intent intent = new Intent(this, MainActivity.class);
@@ -45,8 +48,8 @@ public class LoginActivity extends AppCompatActivity {
 
         } else {
             setContentView(R.layout.activity_login);
-            Button singIn = (Button) findViewById(R.id.signIn); // кнопка авторизации
-            EditText login = (EditText) findViewById(R.id.username), password = (EditText) findViewById(R.id.password);
+            Button singIn = findViewById(R.id.signIn); // authorisation
+            EditText login = findViewById(R.id.username), password = findViewById(R.id.password);
 
             singIn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -62,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             });
 
-            Button singUp = (Button) findViewById(R.id.signUp); // кнопка регистрации
+            TextView singUp = findViewById(R.id.signUp); // registration
             singUp.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
