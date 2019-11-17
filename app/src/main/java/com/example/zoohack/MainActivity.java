@@ -57,17 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Read from the database
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                String value = dataSnapshot.getValue(String.class);
-            }
 
-            @Override
-            public void onCancelled(DatabaseError error) {
-            }
-        });
     }
 }

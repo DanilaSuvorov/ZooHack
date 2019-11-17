@@ -40,7 +40,7 @@ class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(final DataAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final DataAdapter.ViewHolder holder, final int position) {
         final ReportForRecyclerView report = reports.get(position);
         holder.name.setText(report.getName());
         holder.place.setText(report.getPlace());
@@ -53,7 +53,7 @@ class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             public void onClick(View view) {
                 holder.rating.setText((Integer.parseInt(report.getRating())-1+""));
                 report.setRating(Integer.parseInt(report.getRating())-1+"");
-                myRef.child("problems").child("0").child("rate").setValue(Integer.parseInt(report.getRating())); // Value
+                myRef.child("problems").child(String.valueOf(position)).child("rate").setValue(Integer.parseInt(report.getRating())); // Value
 
             }
         });
@@ -62,7 +62,7 @@ class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             public void onClick(View view) {
                 holder.rating.setText((Integer.parseInt(report.getRating())+1+""));
                 report.setRating(Integer.parseInt(report.getRating())+1+"");
-                myRef.child("problems").child("0").child("rate").setValue(Integer.parseInt(report.getRating())); // Value
+                myRef.child("problems").child(String.valueOf(position)).child("rate").setValue(Integer.parseInt(report.getRating())); // Value
             }
         });
     }
