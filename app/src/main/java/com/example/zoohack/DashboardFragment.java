@@ -69,12 +69,13 @@ public class DashboardFragment extends Fragment {
                 editText5 = rootView.findViewById(R.id.desc);
                 description = editText5.getText().toString();
 
-                myRef.child(String.valueOf(count)).child("type").setValue(type); // Value
+                myRef.child(String.valueOf(count)).child("name").setValue(type); // Value
                 myRef.child(String.valueOf(count)).child("place").setValue(place); // Value
                 myRef.child(String.valueOf(count)).child("affected").setValue(affected); // Value
                 myRef.child(String.valueOf(count)).child("count").setValue(num); // Value
                 myRef.child(String.valueOf(count)).child("dis").setValue(description);
-                myRef.child("count").setValue(count+2);// Value
+                myRef.child(String.valueOf(count)).child("rate").setValue(0);
+                myRef.child("count").setValue(count+1);// Value
             }
         });
 

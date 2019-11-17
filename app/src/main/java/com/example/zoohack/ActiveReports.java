@@ -28,7 +28,7 @@ public class ActiveReports extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_active_reports, container, false);
         final RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.list);
-        myRef.addValueEventListener(new ValueEventListener() {
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 phones = new ArrayList<>();
@@ -37,9 +37,9 @@ public class ActiveReports extends Fragment {
                     String name = dataSnapshot.child("problems").child(i+"").child("name").getValue(String.class);
                     String place = dataSnapshot.child("problems").child(i+"").child("place").getValue(String.class);
                     String affected = dataSnapshot.child("problems").child(i+"").child("affected").getValue(String.class);
-                    String num = String.valueOf(dataSnapshot.child("problems").child(i+"").child("num").getValue(Integer.class));
+                    String num = String.valueOf(dataSnapshot.child("problems").child(i+"").child("count").getValue(String.class));
                     String rating = String.valueOf(dataSnapshot.child("problems").child(i+"").child("rate").getValue(Integer.class));
-                    String author = dataSnapshot.child("problems").child(i+"").child("author").getValue(String.class);
+                    String author = dataSnapshot.child("problems").child(i+"").child("dis").getValue(String.class);
                     phones.add(new ReportForRecyclerView (name, place, author,rating,affected,num));
                     DataAdapter adapter = new DataAdapter(getContext(), phones);
                     // устанавливаем для списка адаптер
