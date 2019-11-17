@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -35,7 +34,7 @@ public class DashboardFragment extends Fragment {
     private String affected;
     private String num;
     private String description;
-    private  String count;
+    private  int count;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_dashboard, container, false);
@@ -47,7 +46,7 @@ public class DashboardFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                count = dataSnapshot.child("problems").child("count").getValue(String.class);
+                count = dataSnapshot.child("count").getValue(Integer.class);
             }
 
             @Override
@@ -69,12 +68,13 @@ public class DashboardFragment extends Fragment {
                 num = editText4.getText().toString();
                 editText5 = rootView.findViewById(R.id.desc);
                 description = editText5.getText().toString();
-                myRef.child(count+1).child("type").setValue(type); // Value
-                myRef.child(count+1).child("place").setValue(place); // Value
-                myRef.child(count+1).child("affected").setValue(affected); // Value
-                myRef.child(count+1).child("count").setValue(num); // Value
-                myRef.child(count+1).child("dis").setValue(description);
-                myRef.child("count").setValue(count+1);// Value
+
+                myRef.child(String.valueOf(count)).child("type").setValue(type); // Value
+                myRef.child(String.valueOf(count)).child("place").setValue(place); // Value
+                myRef.child(String.valueOf(count)).child("affected").setValue(affected); // Value
+                myRef.child(String.valueOf(count)).child("count").setValue(num); // Value
+                myRef.child(String.valueOf(count)).child("dis").setValue(description);
+                myRef.child("count").setValue(count+2);// Value
             }
         });
 
